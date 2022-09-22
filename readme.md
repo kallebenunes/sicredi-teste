@@ -38,6 +38,6 @@ $ python manage.py runserver
 ```
 # :art: Layout
 
-![alt text](https://github.com/kallebenunes/data/blob/main/preview-scrd.jpeg "Screenshot 1")]
+![alt text](https://github.com/kallebenunes/data/blob/main/preview-scrd.jpeg "Screenshot 1")
 
 
