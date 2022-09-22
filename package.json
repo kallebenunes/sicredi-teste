@@ -1,0 +1,29 @@
+{
+  "name": "sicredi",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "yarn webpack --progress --watch --mode development",
+    "build": "yarn webpack --progress --mode production"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "css-loader": "^6.7.1",
+    "postcss-loader": "^7.0.1",
+    "sass-loader": "^13.0.2",
+    "style-loader": "^3.3.1",
+    "vite": "^3.1.2",
+    "webpack": "^5.74.0",
+    "webpack-cli": "^4.10.0"
+  },
+  "dependencies": {
+    "@popperjs/core": "^2.11.6",
+    "bootstrap": "5.2.1",
+    "mini-css-extract-plugin": "^2.6.1",
+    "popper.js": "^1.16.1",
+    "rxjs": "^7.5.6",
+    "sass": "^1.54.9"
+  }
+}

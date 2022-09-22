@@ -1,0 +1,46 @@
+{% load replace %}
+
+
+<nav class="aside-nav d-none" >
+    <button class="border-0 bg-transparent position-absolute end-0 aside-nav-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample" aria-expanded="false" aria-controls="collapseWidthExample">
+        <svg xmlns="http://www.w3.org/2000/svg" width="40px" height="40" viewBox="0 0 72 72" id="emoji" data-ember-extension="1">
+            <g id="color"/>
+            <g id="hair"/>
+            <g id="skin"/>
+            <g id="skin-shadow"/>
+            <g id="line">
+              <line x1="17.5" x2="54.5" y1="17.5" y2="54.5" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2"/>
+              <line x1="54.5" x2="17.5" y1="17.5" y2="54.5" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2"/>
+            </g>
+          </svg>
+        
+    </button>
+
+
+    <div class="accordion accordion-flush py-4 my-4 bg-green w-70 mx-auto text-white" id="accordionFlushExample">
+        
+        <div class="accordion-item bg-green text-white">
+        {% for k,v in navigation.items %}
+          <h2 class="accordion-header  bg-green" id="flush-headingOne">
+            <button class="accordion-button collapsed bg-green text-white" type="button" data-bs-toggle="collapse" data-bs-target="#flush-{{ k|replace:' ' }}" aria-expanded="false" aria-controls="flush-collapseOne">
+                {{ k }}
+            </button>
+          </h2>
+         
+          <div id="flush-{{ k|replace:' ' }}" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body py-0">
+                {% for nav in v %}
+                    <div>
+                        <a class="text-decoration-none text-white d-block py-3">
+                            {{ nav }}
+                        </a>
+                    </div>
+                {% endfor %}
+            </div>
+          </div>
+          {% endfor %}
+     </div>
+       
+        
+      </div>
+</nav>

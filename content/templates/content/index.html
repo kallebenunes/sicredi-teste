@@ -1,0 +1,31 @@
+{% load static %}
+
+<section class="container pt-4">
+    <div class="row">
+        <div class="col-12 col-xl-4">
+            <h1 class="display-md-4 display-3 text-secondar pb-3 text-md-start text-center ">
+                Nós temos as melhores oprtunidades <b class="text-success fw-bolder">para você </b>
+            </h1>
+            <p class="fs-4 text-md-start text-center">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Itaque, debitis officia. Voluptate vero placeat libero excepturi accusamus dolorum veritatis nemo beatae. Asperiores, fugit! Modi minima nesciunt recusandae corrupti sit illo?
+            </p>
+        </div>
+        <div class="col-12 col-md-6 col-xl-5  py-4 mx-auto display-flex">
+            <img src=" {% static 'img/image1.jpg' %}" alt="" class="d-flex justify-content-center img-fluid mx-auto" >
+        </div>
+        <div class="col-12 col-md-6 col-xl-3">
+            <ul class="d-flex flex-column align-items-center align-items-md-end">
+            {% for value in aside_items %}
+                <li>
+                    <a href="{{ value.href }}" class="text-decoration-none text-dark fs-4">
+                        {% if value.badge %}
+                        <span class="fs-5 rounded-pill p-1 bg-warning" >{{value.badge}}</span>
+                        {% endif %}
+                        {{ value.item }}
+                    </a>
+                </li>
+            {% endfor %}
+            </ul>
+        </div>        
+    </div>
+</section>
