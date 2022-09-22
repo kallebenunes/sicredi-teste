@@ -35,9 +35,9 @@ $ python manage.py migrate
 $ python manage.py runserver
 
 # O servidor inciará na porta:8000 - acesse http://localhost:800 
-
+```
 # :art: Layout
 
-![alt text](https://github.com/kallebenunes/data/blob/main/preview-scrd.jpeg "Screenshot 1")
+![alt text](https://github.com/kallebenunes/data/blob/main/preview-scrd.jpeg "Screenshot 1")]
 
 
